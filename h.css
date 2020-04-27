@@ -1,0 +1,31 @@
+body,
+h1 {
+  font-family: "Raleway", sans-serif;
+}
+body,
+html {
+  height: 100%;
+}
+.bgimg {
+  background-image: url("https://www.w3schools.com/w3images/forestbridge.jpg");
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.hdiv {
+  position: absolute;
+  top: -0.2rem;
+  left: -0.8rem;
+  width: 1.7rem;
+  height: 0.9rem;
+}
+
+.hdiv2 {
+    top: 300; 
+    left: 500; 
+    width: 100%; 
+    height: 10%; 
+    resize: both;
+    overflow: auto;
+}
