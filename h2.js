@@ -6,7 +6,7 @@ var tl = anime.timeline({
   duration: 20000,
   loop: true,
   direction: "linear",
-  easing: "easeInOutExpo",
+  easing: "easeInOutBounce",
   autoplay: true,
 });
 

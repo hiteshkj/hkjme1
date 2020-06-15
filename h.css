@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body,
 h1 {
   font-family: "Raleway", sans-serif;
@@ -5,6 +8,8 @@ h1 {
 body,
 html {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 .bgimg {
   background-image: url("https://www.w3schools.com/w3images/forestbridge.jpg");
@@ -22,10 +27,142 @@ html {
 }
 
 .hdiv2 {
-    top: 300; 
-    left: 500; 
-    width: 100%; 
-    height: 10%; 
-    resize: both;
-    overflow: auto;
+  top: 300;
+  left: 500;
+  width: 100%;
+  height: 10%;
+  resize: both;
+  overflow: auto;
+}
+
+.hmenu1, .hmenu2, .hmenu3, .hmenu4 {
+  color: white;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 10%;
+  margin: auto;
+  position: relative;
+  background-color: #2c3e50;
+  z-index: 7;
+}
+  li {
+    float: left;
+    width: 25%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    font-size: 3.2vmax;
+    z-index: 9;
+    margin: 0;
+    padding: 4px;
+  }
+
+a.active {
+  background-color: #f50930;
+  pointer-events: none;
+}
+
+li.slider {
+  width: 25%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 8;
+  transition: left 0.4s, background-color 0.4s;
+}
+
+.hmenu1 li:nth-child(2):hover ~ .slider, 
+.hmenu1 li:nth-child(2):focus ~ .slider,
+.hmenu1 li:nth-child(2):active ~ .slider {
+  left: 25%;
+  background-color: #9b59b6;
+}
+
+.hmenu1 li:nth-child(3):hover ~ .slider, 
+.hmenu1 li:nth-child(3):focus ~ .slider, 
+.hmenu1 li:nth-child(3):active ~ .slider {
+  left: 50%;
+  background-color: #e67e22;
+}
+.hmenu1 li:nth-child(4):hover ~ .slider, 
+.hmenu1 li:nth-child(4):focus ~ .slider, 
+.hmenu1 li:nth-child(4):active ~ .slider {
+  left: 75%;
+  background-color: #16a085;
+}
+
+
+.hmenu2 li:nth-child(1):hover ~ .slider, 
+.hmenu2 li:nth-child(1):focus ~ .slider, 
+.hmenu2 li:nth-child(1):active ~ .slider {
+  left: 0;
+  background-color: #3498db;
+}
+
+.hmenu2 li:nth-child(3):hover ~ .slider, 
+.hmenu2 li:nth-child(3):focus ~ .slider, 
+.hmenu2 li:nth-child(3):active ~ .slider {
+  left: 50%;
+  background-color: #e67e22;
+}
+.hmenu2 li:nth-child(4):hover ~ .slider, 
+.hmenu2 li:nth-child(4):focus ~ .slider, 
+.hmenu2 li:nth-child(4):active ~ .slider {
+  left: 75%;
+  background-color: #16a085;
+}
+
+.hmenu3 li:nth-child(1):hover ~ .slider, 
+.hmenu3 li:nth-child(1):focus ~ .slider, 
+.hmenu3 li:nth-child(1):active ~ .slider {
+  left: 0;
+  background-color: #3498db;
+}
+
+.hmenu3 li:nth-child(2):hover ~ .slider, 
+.hmenu3 li:nth-child(2):focus ~ .slider,
+.hmenu3 li:nth-child(2):active ~ .slider {
+  left: 25%;
+  background-color: #9b59b6;
+}
+.hmenu3 li:nth-child(4):hover ~ .slider, 
+.hmenu3 li:nth-child(4):focus ~ .slider, 
+.hmenu3 li:nth-child(4):active ~ .slider {
+  left: 75%;
+  background-color: #16a085;
+}
+
+.hmenu4 li:nth-child(1):hover ~ .slider, 
+.hmenu4 li:nth-child(1):focus ~ .slider, 
+.hmenu4 li:nth-child(1):active ~ .slider {
+  left: 0;
+  background-color: #3498db;
+}
+
+.hmenu4 li:nth-child(2):hover ~ .slider, 
+.hmenu4 li:nth-child(2):focus ~ .slider,
+.hmenu4 li:nth-child(2):active ~ .slider {
+  left: 25%;
+  background-color: #9b59b6;
+}
+
+.hmenu4 li:nth-child(3):hover ~ .slider, 
+.hmenu4 li:nth-child(3):focus ~ .slider, 
+.hmenu4 li:nth-child(3):active ~ .slider {
+  left: 50%;
+  background-color: #e67e22;
 }
